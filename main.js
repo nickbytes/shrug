@@ -3,11 +3,9 @@ var clipboard = require('clipboard')
 
 var mb = menubar({
   width: 200,
-  height: 200
+  height: 100
 })
 
-mb.on('ready', function ready () {
-  console.log('app is ready')
-
+mb.on('show', function ready () {
   clipboard.writeText('¯\\_(ツ)_/¯');
 })
