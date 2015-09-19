@@ -1,7 +1,7 @@
 {
-  "name": "example-menubar-app",
+  "name": "shrug-menubar-app",
   "version": "1.0.0",
-  "description": "example menubar electron app",
+  "description": "Shrug menubar electron app",
   "dependencies": {
     "menubar": "*"
   },
@@ -11,7 +11,7 @@
   },
   "main": "main.js",
   "scripts": {
-    "build": "electron-packager . Example --platform=darwin --arch=x64 --version=0.30.3 --ignore=node_modules/electron --icon=Icon.icns",
+    "build": "electron-packager . Shrug --platform=darwin --arch=x64 --version=0.30.3 --ignore=node_modules/electron --icon=Icon.icns",
     "start": "electron . && cssnext styles-src.css styles.css"
   }
 }
