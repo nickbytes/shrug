@@ -5,7 +5,7 @@ var globalShortcut = require('global-shortcut')
 var mb = menubar({
   width: 200,
   height: 100,
-  preloadWindow: true
+  preloadWindow: true,
 })
 
 mb.on('ready', function ready(){
@@ -13,14 +13,21 @@ mb.on('ready', function ready(){
     console.log('ctrl+alt+\\ is pressed')
     // Emit show event
     mb.showWindow()
+    // Move to center of screen, cannot get tray position to simulate click
+    mb.positioner.move('center')
+    // Wait one second, then close window
+    setTimeout(function(){
+      mb.hideWindow()
+    }, 1000)
+
   })
 
   if (!ret) {
     console.log('registration failed')
   }
 
-  // Check whether a shortcut is registered.
-  console.log(globalShortcut.isRegistered('ctrl+alt+\\') + 'ok')
+  // Check whether a shortcut is registered
+  console.log(globalShortcut.isRegistered('ctrl+alt+\\'))
 })
 
 // When menubar opens
