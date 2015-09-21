@@ -12,6 +12,6 @@
   "main": "main.js",
   "scripts": {
     "build": "electron-packager . Shrug --platform=darwin --arch=x64 --version=0.30.3 --ignore=node_modules/electron --icon=Icon.icns",
-    "start": "electron . && cssnext styles-src.css styles.css"
+    "start": "electron ."
   }
 }
