@@ -13,8 +13,6 @@ mb.on('ready', function ready(){
     console.log('ctrl+alt+\\ is pressed')
     // Emit show event
     mb.showWindow()
-    // Move to center of screen, cannot get tray position to simulate click
-    mb.positioner.move('center')
     // Wait one second, then close window
     setTimeout(function(){
       mb.hideWindow()
