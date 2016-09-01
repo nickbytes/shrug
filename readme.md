@@ -7,7 +7,7 @@ Menubar app for copying the `¯\_(ツ)_/¯` emoji to your clipboard. App uses Ma
 - Clicking the icon in the menu bar will copy `¯\_(ツ)_/¯` to your clipboard. Now you can paste away!
 - `ctrl + alt + \` will also copy `¯\_(ツ)_/¯` to your clipboard. A small window will show to confirm!
 
-## instructions
+## to contribute
 
 - run `npm install`
 - run `npm run build` to make .app
