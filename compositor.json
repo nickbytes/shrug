@@ -41,10 +41,6 @@
         {
           "href": "https://github.com/nickbytes/shrug",
           "text": "GitHub"
-        },
-        {
-          "href": "https://npmjs.com/package/shrug-menubar-app",
-          "text": "npm"
         }
       ]
     },
